@@ -1,0 +1,2 @@
+import { Link } from 'react-router'
+export default function PurchaseFailure() { return <div className="container"><div className="hero-panel p-5 text-center"><div className="display-4">❌</div><h1 className="page-title h2 mt-3">No se pudo realizar la compra</h1><p className="text-muted-soft">Revisa que exista al menos un producto y que la dirección esté completa.</p><Link to="/carrito" className="btn btn-outline-info">Volver al carrito</Link></div></div> }

@@ -1,0 +1,2 @@
+import { Link } from 'react-router'
+export default function PurchaseSuccess() { return <div className="container"><div className="hero-panel p-5 text-center"><div className="display-4">✅</div><h1 className="page-title h2 mt-3">Compra realizada</h1><p className="text-muted-soft">La compra simulada fue registrada correctamente y se generó un resumen local.</p><Link to="/videojuegos" className="btn btn-cyan">Seguir explorando</Link></div></div> }
