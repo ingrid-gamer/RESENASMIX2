@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body { font-family: 'Poppins', sans-serif; background-color: #020617; }
+.rotate-180 { transform: rotate(180deg); }
+.fade-in { animation: fadeIn 0.3s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Breakpoints ERS (360px, 768px, 1280px) */
+@media (max-width: 360px) { body { padding: 0 2px; } }
+@media (min-width: 768px) { .md-flex { display: flex !important; } }
+@media (min-width: 1280px) { .max-w-7xl { max-width: 80rem; } }

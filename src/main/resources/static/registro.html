@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ResenasMIXX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+
+    <header class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-cyan-400">🎮 ResenasMIXX</a>
+            <button id="btnMenuMovil" aria-label="Menú" class="md:hidden text-2xl">☰</button>
+            <nav id="menuMovil" class="hidden md:flex flex-col md:flex-row gap-4 items-center">
+                <a href="index.html" class="text-slate-300 hover:text-cyan-400">Inicio</a>
+                <a href="resenas.html" class="text-slate-300 hover:text-cyan-400">Reseñas</a>
+                <a href="login.html" class="text-slate-300 hover:text-white">Login</a>
+                <a href="registro.html" class="bg-cyan-500 text-slate-950 px-3 py-1.5 rounded font-bold">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+<!--registro-->
+
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl w-full max-w-md space-y-4">
+            <h1 class="text-2xl font-bold text-center">Crear Cuenta</h1>
+            <form id="registroForm" class="space-y-3" novalidate>
+                <div>
+                    <input type="text" id="nombre" placeholder="Nombre completo" autocomplete="name" class="w-full bg-slate-950 border border-slate-800 p-2.5 rounded text-sm">
+                    <span class="text-red-400 text-xs hidden" id="errNombre"></span>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="correo@ejemplo.cl" autocomplete="email" class="w-full bg-slate-950 border border-slate-800 p-2.5 rounded text-sm">
+                    <span class="text-red-400 text-xs hidden" id="errEmail"></span>
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Mínimo 6 caracteres" autocomplete="new-password" class="w-full bg-slate-950 border border-slate-800 p-2.5 rounded text-sm">
+                    <span class="text-red-400 text-xs hidden" id="errPassword"></span>
+                </div>
+                <div id="registroStatus" class="text-center text-sm p-2 rounded hidden"></div>
+                <button type="submit" class="w-full bg-cyan-500 text-slate-950 font-bold py-2.5 rounded">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer class="bg-slate-900 border-t border-slate-800 p-4 text-center text-slate-500 text-xs">&copy; 2026 ResenasMIXX</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
