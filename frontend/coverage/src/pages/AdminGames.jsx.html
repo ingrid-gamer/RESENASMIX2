@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/pages/AdminGames.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/pages</a> AdminGames.jsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/45</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/32</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/21</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useEffect, useState } from 'react'
+import { addGame, editGame, listGames, removeGame } from '../services/api.js'
+import { useAuth } from '../contexts/AuthContext.jsx'
+import { Navigate } from 'react-router'
+export default function <span class="fstat-no" title="function not covered" >AdminGames() {</span> const { isAdmin, user } = <span class="cstat-no" title="statement not covered" >useAuth()</span>; const [games, setGames] = <span class="cstat-no" title="statement not covered" >useState([]); c</span>onst [form, setForm] = <span class="cstat-no" title="statement not covered" >useState({ titulo:'', genero:'', consola:'', precio:0, enOferta:false, precioOferta:'', imagen:'https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000' }); c</span>onst [editingId, setEditingId] = <span class="cstat-no" title="statement not covered" >useState(null); c</span>onst [error, setError] = <span class="cstat-no" title="statement not covered" >useState(''); <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >u</span>seEffect(() =&gt; {</span> <span class="cstat-no" title="statement not covered" >if (!user || !isAdmin) <span class="cstat-no" title="statement not covered" >return; <span class="cstat-no" title="statement not covered" >l</span></span>istGames().then(setGames).<span class="fstat-no" title="function not covered" >catch((e</span>rr) =&gt; <span class="cstat-no" title="statement not covered" >setError(err.message))</span> }</span>, [user, isAdmin]); <span class="cstat-no" title="statement not covered" >i</span>f (!user) <span class="cstat-no" title="statement not covered" >return &lt;Navigate to="/login" replace /&gt;; <span class="cstat-no" title="statement not covered" >i</span></span>f (!isAdmin) <span class="cstat-no" title="statement not covered" >return &lt;Navigate to="/" replace /&gt;; a</span></span>sync function <span class="fstat-no" title="function not covered" >submit(e</span>) { <span class="cstat-no" title="statement not covered" >e.preventDefault(); <span class="cstat-no" title="statement not covered" >s</span>etError(''); <span class="cstat-no" title="statement not covered" >t</span>ry { const payload = <span class="cstat-no" title="statement not covered" >{ ...form, precio: Number(form.precio), precioOferta: form.precioOferta ? Number(form.precioOferta) : undefined }; c</span>onst saved = <span class="cstat-no" title="statement not covered" >editingId ? await editGame(editingId, payload) : await addGame(payload); <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >s</span>etGames((c</span>urrent) =&gt; <span class="cstat-no" title="statement not covered" >editingId ? current.<span class="fstat-no" title="function not covered" >map((g</span>ame) =&gt; <span class="cstat-no" title="statement not covered" >game.id === editingId ? saved : game)</span> : [...current, saved])</span>; <span class="cstat-no" title="statement not covered" >r</span>eset() }</span> catch (err) { <span class="cstat-no" title="statement not covered" >setError(err.message) }</span> }</span> function <span class="fstat-no" title="function not covered" >reset() {</span> <span class="cstat-no" title="statement not covered" >setEditingId(null); <span class="cstat-no" title="statement not covered" >s</span>etForm({ titulo:'', genero:'', consola:'', precio:0, enOferta:false, precioOferta:'', imagen:'https://images.pexels.com/photos/7915357/pexels-photo-7915357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000' }) }</span> function <span class="fstat-no" title="function not covered" >edit(g</span>ame) { <span class="cstat-no" title="statement not covered" >setEditingId(game.id); <span class="cstat-no" title="statement not covered" >s</span>etForm(game) }</span> async function <span class="fstat-no" title="function not covered" >del(i</span>d) { <span class="cstat-no" title="statement not covered" >try { <span class="cstat-no" title="statement not covered" >await removeGame(id); <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >s</span>etGames((c</span>urrent) =&gt; <span class="cstat-no" title="statement not covered" >current.<span class="fstat-no" title="function not covered" >filter((g</span>ame) =&gt; <span class="cstat-no" title="statement not covered" >game.id !== id)</span>)</span> }</span> catch (err) { <span class="cstat-no" title="statement not covered" >setError(err.message) }</span> }</span> <span class="cstat-no" title="statement not covered" >return &lt;div className="container"&gt;&lt;h1 className="page-title h2"&gt;CRUD de videojuegos&lt;/h1&gt;{error &amp;&amp; &lt;div className="alert alert-danger"&gt;{error}&lt;/div&gt;}&lt;div className="form-panel p-4 mb-4"&gt;&lt;form onSubmit={submit}&gt;&lt;div className="row g-2"&gt;&lt;div className="col-md-6"&gt;&lt;input className="form-control" placeholder="Título" value={form.titulo || ''} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, titulo:e.target.value })} r</span>equired /&gt;&lt;/div&gt;&lt;div className="col-md-3"&gt;&lt;input className="form-control" placeholder="Género" value={form.genero || ''} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, genero:e.target.value })} r</span>equired /&gt;&lt;/div&gt;&lt;div className="col-md-3"&gt;&lt;input className="form-control" placeholder="Consola" value={form.consola || ''} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, consola:e.target.value })} r</span>equired /&gt;&lt;/div&gt;&lt;div className="col-md-3"&gt;&lt;input className="form-control" type="number" min="0" placeholder="Precio" value={form.precio ?? 0} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, precio:e.target.value })} /&gt;</span>&lt;/div&gt;&lt;div className="col-md-3"&gt;&lt;input className="form-control" type="number" min="0" placeholder="Precio oferta" value={form.precioOferta ?? ''} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, precioOferta:e.target.value })} /&gt;</span>&lt;/div&gt;&lt;div className="col-md-3"&gt;&lt;input className="form-control" placeholder="URL de imagen" value={form.imagen || ''} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, imagen:e.target.value })} /&gt;</span>&lt;/div&gt;&lt;div className="col-md-3 d-flex align-items-center"&gt;&lt;div className="form-check"&gt;&lt;input id="offer" className="form-check-input" type="checkbox" checked={Boolean(form.enOferta)} <span class="fstat-no" title="function not covered" >onChange={(e</span>) =&gt; <span class="cstat-no" title="statement not covered" >setForm({ ...form, enOferta:e.target.checked })} /&gt;</span>&lt;label className="form-check-label" htmlFor="offer"&gt;En oferta&lt;/label&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div className="mt-3"&gt;&lt;button className="btn btn-cyan me-2"&gt;{editingId ? 'Actualizar' : 'Crear'}&lt;/button&gt;&lt;button type="button" className="btn btn-outline-secondary" onClick={reset}&gt;Limpiar&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;&lt;/div&gt;&lt;div className="table-dark-panel table-responsive"&gt;&lt;table className="table align-middle"&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Título&lt;/th&gt;&lt;th&gt;Género&lt;/th&gt;&lt;th&gt;Consola&lt;/th&gt;&lt;th&gt;Acciones&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;{games.<span class="fstat-no" title="function not covered" >map((g</span>ame) =&gt; <span class="cstat-no" title="statement not covered" >&lt;tr key={game.id}&gt;&lt;td&gt;{game.id}&lt;/td&gt;&lt;td&gt;{game.titulo}&lt;/td&gt;&lt;td&gt;{game.genero}&lt;/td&gt;&lt;td&gt;{game.consola}&lt;/td&gt;&lt;td&gt;&lt;button className="btn btn-outline-info btn-sm me-2" <span class="fstat-no" title="function not covered" >onClick={() =&gt; <span class="cstat-no" title="statement not covered" >e</span>dit(game)}&gt;E</span>ditar&lt;/button&gt;&lt;button className="btn btn-outline-danger btn-sm" <span class="fstat-no" title="function not covered" >onClick={() =&gt; <span class="cstat-no" title="statement not covered" >d</span>el(game.id)}&gt;E</span>liminar&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;)</span>}&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt; }</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-10-12T01:32:44.479Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
