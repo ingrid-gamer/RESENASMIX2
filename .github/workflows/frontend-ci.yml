@@ -1,8 +1,17 @@
-﻿name: Frontend CI y GitHub Pages
+﻿
+name: Frontend CI y GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build-and-test:
@@ -13,19 +22,28 @@ jobs:
         working-directory: ./frontend
 
     steps:
-      - name: Checkout del código
+      - name: Descargar repositorio
         uses: actions/checkout@v4
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Comprobar versiones
+        run: |
+          node --version
+          npm --version
 
       - name: Instalar dependencias
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      - name: Reparar permisos de Vitest en el servidor de GitHub
-        run: chmod +x ./node_modules/.bin/vitest
+      - name: Comprobar archivos de pruebas
+        run: |
+          echo "Buscando archivos de pruebas..."
+          find src -type f \( -name "*.test.js" -o -name "*.test.jsx" \)
 
       - name: Ejecutar pruebas unitarias
         run: npm run test:run
