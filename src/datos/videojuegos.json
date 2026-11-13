@@ -1,0 +1,122 @@
+[
+    {
+        "consola": "PS5",
+        "genero": "Mundo abierto",
+        "id": 1,
+        "titulo": "GTA V"
+    },
+    {
+        "consola": "PC",
+        "genero": "Sandbox",
+        "id": 2,
+        "titulo": "Minecraft"
+    },
+    {
+        "consola": "PC",
+        "genero": "Shooter",
+        "id": 3,
+        "titulo": "Valorant"
+    },
+    {
+        "consola": "Xbox",
+        "genero": "Deportes",
+        "id": 4,
+        "titulo": "FIFA 24"
+    },
+    {
+        "consola": "Nintendo Switch",
+        "genero": "Aventura",
+        "id": 5,
+        "titulo": "The Legend of Zelda: Breath of the Wild"
+    },
+    {
+        "consola": "PS5",
+        "genero": "Battle Royale",
+        "id": 6,
+        "titulo": "Fortnite"
+    },
+    {
+        "consola": "PC",
+        "genero": "Shooter",
+        "id": 7,
+        "titulo": "Call of Duty: Warzone"
+    },
+    {
+        "consola": "PC",
+        "genero": "Shooter",
+        "id": 8,
+        "titulo": "Overwatch 2"
+    },
+    {
+        "consola": "PS5",
+        "genero": "Deportes",
+        "id": 9,
+        "titulo": "EA Sports FC 24"
+    },
+    {
+        "consola": "PS4",
+        "genero": "Mundo abierto",
+        "id": 10,
+        "titulo": "Red Dead Redemption 2"
+    },
+    {
+        "consola": "PC",
+        "genero": "Multijugador",
+        "id": 11,
+        "titulo": "Among Us"
+    },
+    {
+        "consola": "PC",
+        "genero": "MOBA",
+        "id": 12,
+        "titulo": "League of Legends"
+    },
+    {
+        "consola": "Xbox",
+        "genero": "Deportes",
+        "id": 13,
+        "titulo": "Rocket League"
+    },
+    {
+        "consola": "PC",
+        "genero": "Simulación",
+        "id": 14,
+        "titulo": "The Sims 4"
+    },
+    {
+        "consola": "PS5",
+        "genero": "Acción",
+        "id": 15,
+        "titulo": "God of War"
+    },
+    {
+        "consola": "PC",
+        "genero": "Plataformas",
+        "id": 16,
+        "titulo": "Hollow Knight"
+    },
+    {
+        "consola": "Nintendo Switch",
+        "genero": "Carreras",
+        "id": 17,
+        "titulo": "Mario Kart 8 Deluxe"
+    },
+    {
+        "consola": "PS5",
+        "genero": "Terror",
+        "id": 18,
+        "titulo": "Resident Evil 4"
+    },
+    {
+        "consola": "PC",
+        "genero": "RPG",
+        "id": 19,
+        "titulo": "Elden Ring"
+    },
+    {
+        "consola": "PS5",
+        "genero": "Acción",
+        "id": 20,
+        "titulo": "Spider-Man 2"
+    }
+]

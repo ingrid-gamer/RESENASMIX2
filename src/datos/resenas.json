@@ -1,0 +1,322 @@
+[
+    {
+        "calificacion": 5,
+        "comentario": "Muy entretenido y con excelente jugabilidad.",
+        "id": 1,
+        "usuario": {
+            "email": "ingrid@gmail.com",
+            "id": 1,
+            "nombre": "Ingrid"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Mundo abierto",
+            "id": 1,
+            "titulo": "GTA V"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Ideal para jugar con amigos en línea.",
+        "id": 2,
+        "usuario": {
+            "email": "camila@gmail.com",
+            "id": 2,
+            "nombre": "Camila"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Sandbox",
+            "id": 2,
+            "titulo": "Minecraft"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Muy competitivo y rápido.",
+        "id": 3,
+        "usuario": {
+            "email": "javier@gmail.com",
+            "id": 3,
+            "nombre": "Javier"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Shooter",
+            "id": 3,
+            "titulo": "Valorant"
+        }
+    },
+    {
+        "calificacion": 3,
+        "comentario": "Buen juego aunque puede mejorar.",
+        "id": 4,
+        "usuario": {
+            "email": "valentina@gmail.com",
+            "id": 4,
+            "nombre": "Valentina"
+        },
+        "videojuego": {
+            "consola": "Xbox",
+            "genero": "Deportes",
+            "id": 4,
+            "titulo": "FIFA 24"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Los gráficos son impresionantes.",
+        "id": 5,
+        "usuario": {
+            "email": "matias@gmail.com",
+            "id": 5,
+            "nombre": "Matias"
+        },
+        "videojuego": {
+            "consola": "Nintendo Switch",
+            "genero": "Aventura",
+            "id": 5,
+            "titulo": "The Legend of Zelda: Breath of the Wild"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Muy divertido para pasar el rato.",
+        "id": 6,
+        "usuario": {
+            "email": "sofia@gmail.com",
+            "id": 6,
+            "nombre": "Sofia"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Battle Royale",
+            "id": 6,
+            "titulo": "Fortnite"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "La historia es bastante interesante.",
+        "id": 7,
+        "usuario": {
+            "email": "diego@gmail.com",
+            "id": 7,
+            "nombre": "Diego"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Shooter",
+            "id": 7,
+            "titulo": "Call of Duty: Warzone"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Excelente multijugador y servidores estables.",
+        "id": 8,
+        "usuario": {
+            "email": "florencia@gmail.com",
+            "id": 8,
+            "nombre": "Florencia"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Shooter",
+            "id": 8,
+            "titulo": "Overwatch 2"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Buen rendimiento y controles fluidos.",
+        "id": 9,
+        "usuario": {
+            "email": "benjamin@gmail.com",
+            "id": 9,
+            "nombre": "Benjamin"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Deportes",
+            "id": 9,
+            "titulo": "EA Sports FC 24"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Muy inmersivo y entretenido.",
+        "id": 10,
+        "usuario": {
+            "email": "constanza@gmail.com",
+            "id": 10,
+            "nombre": "Constanza"
+        },
+        "videojuego": {
+            "consola": "PS4",
+            "genero": "Mundo abierto",
+            "id": 10,
+            "titulo": "Red Dead Redemption 2"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "No esperaba que fuera tan bueno.",
+        "id": 11,
+        "usuario": {
+            "email": "nicolas@gmail.com",
+            "id": 11,
+            "nombre": "Nicolas"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Multijugador",
+            "id": 11,
+            "titulo": "Among Us"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "La música y ambientación destacan mucho.",
+        "id": 12,
+        "usuario": {
+            "email": "fernanda@gmail.com",
+            "id": 12,
+            "nombre": "Fernanda"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "MOBA",
+            "id": 12,
+            "titulo": "League of Legends"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Muy recomendado para jugar en equipo.",
+        "id": 13,
+        "usuario": {
+            "email": "sebastian@gmail.com",
+            "id": 13,
+            "nombre": "Sebastian"
+        },
+        "videojuego": {
+            "consola": "Xbox",
+            "genero": "Deportes",
+            "id": 13,
+            "titulo": "Rocket League"
+        }
+    },
+    {
+        "calificacion": 3,
+        "comentario": "Tiene algunos errores pero sigue siendo divertido.",
+        "id": 14,
+        "usuario": {
+            "email": "isidora@gmail.com",
+            "id": 14,
+            "nombre": "Isidora"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Simulación",
+            "id": 14,
+            "titulo": "The Sims 4"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Excelente experiencia desde el inicio.",
+        "id": 15,
+        "usuario": {
+            "email": "cristobal@gmail.com",
+            "id": 15,
+            "nombre": "Cristobal"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Acción",
+            "id": 15,
+            "titulo": "God of War"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Muy buenos gráficos y rendimiento.",
+        "id": 16,
+        "usuario": {
+            "email": "daniela@gmail.com",
+            "id": 16,
+            "nombre": "Daniela"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "Plataformas",
+            "id": 16,
+            "titulo": "Hollow Knight"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Perfecto para jugar los fines de semana.",
+        "id": 17,
+        "usuario": {
+            "email": "tomas@gmail.com",
+            "id": 17,
+            "nombre": "Tomás"
+        },
+        "videojuego": {
+            "consola": "Nintendo Switch",
+            "genero": "Carreras",
+            "id": 17,
+            "titulo": "Mario Kart 8 Deluxe"
+        }
+    },
+    {
+        "calificacion": 4,
+        "comentario": "Me gustó mucho la jugabilidad.",
+        "id": 18,
+        "usuario": {
+            "email": "paula@gmail.com",
+            "id": 18,
+            "nombre": "Paula"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Terror",
+            "id": 18,
+            "titulo": "Resident Evil 4"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Uno de los mejores juegos que he probado.",
+        "id": 19,
+        "usuario": {
+            "email": "martin@gmail.com",
+            "id": 19,
+            "nombre": "Martin"
+        },
+        "videojuego": {
+            "consola": "PC",
+            "genero": "RPG",
+            "id": 19,
+            "titulo": "Elden Ring"
+        }
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Muy entretenido y recomendado.",
+        "id": 20,
+        "usuario": {
+            "email": "josefina@gmail.com",
+            "id": 20,
+            "nombre": "Josefina"
+        },
+        "videojuego": {
+            "consola": "PS5",
+            "genero": "Acción",
+            "id": 20,
+            "titulo": "Spider-Man 2"
+        }
+    }
+]

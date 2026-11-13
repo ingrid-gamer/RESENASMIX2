@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - ResenasMIXX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col text-xs">
+
+    <header class="bg-slate-900 p-3 border-b border-slate-800 flex justify-between items-center">
+        <a href="index.html" class="font-bold text-cyan-400 text-sm">🎮 ResenasMIXX</a>
+        <nav class="flex gap-3">
+            <a href="index.html" class="text-slate-400">Inicio</a>
+            <a href="resenas.html" class="text-cyan-400 font-bold">Reseñas</a>
+            <a href="login.html" class="text-slate-400">Login</a>
+            <a href="registro.html" class="text-slate-400">Registro</a>
+        </nav>
+    </header>
+<!--publicar una reseña, de momento solo está la opcion de seleccionar 2 juegos-->
+    <main class="max-w-md mx-auto p-4 flex-grow w-full space-y-4">
+        <form id="resenaForm" class="bg-slate-900 p-4 rounded-lg border border-slate-800 space-y-2" novalidate>
+            <h1 class="font-bold text-cyan-400 text-sm">Publica una Reseña</h1>
+
+            <label for="juegoNombre" class="sr-only">Título del juego</label>
+            <input type="text" id="juegoNombre" list="sugerenciasJuegos" placeholder="Título del juego" autocomplete="off" class="w-full bg-slate-950 border border-slate-800 p-2 rounded">
+<!-- los dos juegos -->      
+            <datalist id="sugerenciasJuegos">
+                <option value="CyberQuest 2088">
+                <option value="Mythic Realms">
+            </datalist>
+            <span class="text-red-400 hidden" id="errJuegoNombre"></span>
+
+            <label for="comentario" class="sr-only">Comentario</label>
+            <textarea id="comentario" rows="2" placeholder="Tu comentario..." class="w-full bg-slate-950 border border-slate-800 p-2 rounded"></textarea>
+            <span class="text-red-400 hidden" id="errComentario"></span>
+
+            <div id="resenaStatus" class="text-center p-1 rounded hidden"></div>
+            <button type="submit" class="w-full bg-cyan-500 text-slate-950 font-bold py-1.5 rounded">Publicar</button>
+        </form>
+
+
+
+
+    <footer class="p-3 text-center text-slate-600">&copy; 2026 ResenasMIXX</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
