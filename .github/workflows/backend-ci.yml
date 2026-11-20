@@ -1,0 +1,39 @@
+name: Java Spring Boot CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'backend/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'backend/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Build with Maven (skip tests for CI speed)
+      run: chmod +x mvnw && ./mvnw clean package -DskipTests
+
+    - name: Run unit tests
+      run: ./mvnw test
+      env:
+        SPRING_DATASOURCE_URL: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+        SPRING_DATASOURCE_USERNAME: sa
+        SPRING_DATASOURCE_PASSWORD: ''
+        JWT_SECRET: test-secret-at-least-32-characters-long

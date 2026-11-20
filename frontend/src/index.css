@@ -1,0 +1,82 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e5e7eb;
+  background: #020617;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #e5e7eb;
+  background:
+    radial-gradient(circle at top right, rgba(8, 145, 178, 0.18), transparent 30rem),
+    radial-gradient(circle at bottom left, rgba(124, 58, 237, 0.13), transparent 26rem),
+    #020617;
+}
+
+a { text-decoration: none; }
+
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+.hero-panel,
+.card-dark,
+.table-dark-panel,
+.form-panel {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(71, 85, 105, 0.45);
+  border-radius: 1rem;
+  box-shadow: 0 16px 45px rgba(0,0,0,.22);
+}
+
+.card-dark { height: 100%; overflow: hidden; }
+.card-dark .card-img { width: 100%; height: 170px; object-fit: cover; background: #111827; }
+
+.game-card-title { color: #f8fafc; transition: color .2s ease; }
+.game-card:hover .game-card-title { color: #22d3ee; }
+
+.navbar-dark-custom { background: rgba(15,23,42,.96); border-bottom: 1px solid rgba(51,65,85,.8); backdrop-filter: blur(12px); }
+.nav-link-custom { color: #cbd5e1 !important; }
+.nav-link-custom.active, .nav-link-custom:hover { color: #22d3ee !important; }
+
+.text-cyan { color: #22d3ee; }
+.text-muted-soft { color: #94a3b8; }
+.border-cyan-soft { border-color: rgba(34,211,238,.35) !important; }
+
+.rating-stars { letter-spacing: .08em; color: #facc15; }
+.price-old { color: #94a3b8; text-decoration: line-through; }
+
+.form-control,
+.form-select {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: #0f172a;
+  color: #fff;
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 .2rem rgba(34,211,238,.12);
+}
+.form-control::placeholder { color: #64748b; }
+
+.btn-cyan { background: #06b6d4; border-color: #06b6d4; color: #082f49; font-weight: 700; }
+.btn-cyan:hover { background: #22d3ee; border-color: #22d3ee; color: #082f49; }
+
+.hero-video iframe { width: 100%; min-height: 320px; border: 0; border-radius: .85rem; }
+
+.table-dark-panel table { margin-bottom: 0; }
+.table-dark-panel th, .table-dark-panel td { background: transparent; color: #cbd5e1; border-color: #334155; vertical-align: middle; }
+
+.footer-custom { background: #0f172a; border-top: 1px solid #1e293b; color: #64748b; }
+
+.page-title { color: #f8fafc; font-weight: 800; letter-spacing: -.03em; }
+
+@media (max-width: 767.98px) {
+  .hero-video iframe { min-height: 220px; }
+  .card-dark .card-img { height: 150px; }
+}
